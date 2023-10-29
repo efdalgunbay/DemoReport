@@ -14,7 +14,7 @@ public class ReadProperties {
         FileInputStream fis;
 
         try{
-            String propertiesFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\" + configFileName;
+            String propertiesFilePath = System.getProperty("user.dir") + "/src/test/resources/" + configFileName;
             fis = new FileInputStream(propertiesFilePath);
             properties.load(fis);
 

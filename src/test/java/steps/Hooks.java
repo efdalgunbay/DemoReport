@@ -20,21 +20,7 @@ public class Hooks {
     @Before
     public void beforeAll() throws IOException {
         driverInit.setDriver();
-        // File fileCucumber = new File("C:\\Users\\onur.tarar\\IdeaProjects\\obilet_Web_Automation\\target\\cucumber.json");
-        // if (fileCucumber.exists()) {
-        //     byte[] empty = new byte[0];
-        //     FileUtils.writeByteArrayToFile(fileCucumber,empty);
-        //     System.out.println("Cucumber File deleted");
-        // }
-//        if (Helper.testProp.getProperty("isLocal").equalsIgnoreCase("false")) {
-//           // File file = new File("C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\CucumberSample\\target\\allure-results");
-//            File file = new File("C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\SpriteCloud\\target\\maven-status");
-//            if (file.exists()) {
-//                file.setWritable(true);
-//                FileUtils.cleanDirectory(file);
-//                System.out.println("File deleted");
-//            }
-//        }
+
     }
 
     @After

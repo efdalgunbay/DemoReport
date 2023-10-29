@@ -9,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.models.PassengerModel;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -153,14 +152,6 @@ public class Helper extends DriverInit {
         calendar.setTime(date);
         calendar.add(Calendar.DAY_OF_YEAR, 1);
         return format.format(calendar.getTime());
-    }
-
-
-    static PassengerModel passengerModel = new PassengerModel();
-
-    public void setEmailAndPhone() {
-        passengerModel.setEmail(System.getenv("EMAIL"));
-        passengerModel.setPhoneNumber(System.getenv("phoneNumber"));
     }
 
 }
